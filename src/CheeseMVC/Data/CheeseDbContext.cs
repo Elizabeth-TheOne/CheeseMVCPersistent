@@ -9,7 +9,8 @@ namespace CheeseMVC.Data
 
         public CheeseDbContext(DbContextOptions<CheeseDbContext> options) 
             : base(options)
-        { }
+        { }   
 
+        public DbSet<CheeseCategory> Categories { get; set; }
     }
 }
